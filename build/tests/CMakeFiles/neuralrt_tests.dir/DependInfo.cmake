@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/nihar/NeuralRT/tests/test_activation.cpp" "tests/CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o" "gcc" "tests/CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o.d"
   "/home/nihar/NeuralRT/tests/test_gemm.cpp" "tests/CMakeFiles/neuralrt_tests.dir/test_gemm.cpp.o" "gcc" "tests/CMakeFiles/neuralrt_tests.dir/test_gemm.cpp.o.d"
+  "/home/nihar/NeuralRT/tests/test_graph.cpp" "tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o" "gcc" "tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o.d"
   "/home/nihar/NeuralRT/tests/test_linear.cpp" "tests/CMakeFiles/neuralrt_tests.dir/test_linear.cpp.o" "gcc" "tests/CMakeFiles/neuralrt_tests.dir/test_linear.cpp.o.d"
   "/home/nihar/NeuralRT/tests/test_sequential.cpp" "tests/CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o" "gcc" "tests/CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o.d"
   "/home/nihar/NeuralRT/tests/test_simd_correctness.cpp" "tests/CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o" "gcc" "tests/CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o.d"

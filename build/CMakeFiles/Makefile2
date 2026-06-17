@@ -243,12 +243,12 @@ tests/clean: _deps/googletest-build/clean
 CMakeFiles/neuralrt.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39 "Built target neuralrt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42 "Built target neuralrt"
 .PHONY : CMakeFiles/neuralrt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/neuralrt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/neuralrt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 0
 .PHONY : CMakeFiles/neuralrt.dir/rule
@@ -260,7 +260,7 @@ neuralrt: CMakeFiles/neuralrt.dir/rule
 # codegen rule for target.
 CMakeFiles/neuralrt.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39 "Finished codegen for target neuralrt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42 "Finished codegen for target neuralrt"
 .PHONY : CMakeFiles/neuralrt.dir/codegen
 
 # clean rule for target.
@@ -277,12 +277,12 @@ tests/CMakeFiles/neuralrt_tests.dir/all: _deps/googletest-build/googletest/CMake
 tests/CMakeFiles/neuralrt_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=44,45,46,47,48,49,50 "Built target neuralrt_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55 "Built target neuralrt_tests"
 .PHONY : tests/CMakeFiles/neuralrt_tests.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/neuralrt_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/neuralrt_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/neuralrt_tests.dir/rule
@@ -294,7 +294,7 @@ neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/rule
 # codegen rule for target.
 tests/CMakeFiles/neuralrt_tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=44,45,46,47,48,49,50 "Finished codegen for target neuralrt_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55 "Finished codegen for target neuralrt_tests"
 .PHONY : tests/CMakeFiles/neuralrt_tests.dir/codegen
 
 # clean rule for target.
@@ -439,12 +439,12 @@ benchmarks/CMakeFiles/neuralrt_benchmarks.dir/all: CMakeFiles/neuralrt.dir/all
 benchmarks/CMakeFiles/neuralrt_benchmarks.dir/all: _deps/googlebenchmark-build/src/CMakeFiles/benchmark.dir/all
 	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/depend
 	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=40,41,42,43 "Built target neuralrt_benchmarks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=43,44,45,46,47 "Built target neuralrt_benchmarks"
 .PHONY : benchmarks/CMakeFiles/neuralrt_benchmarks.dir/all
 
 # Build rule for subdir invocation for target.
 benchmarks/CMakeFiles/neuralrt_benchmarks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/neuralrt_benchmarks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nihar/NeuralRT/build/CMakeFiles 0
 .PHONY : benchmarks/CMakeFiles/neuralrt_benchmarks.dir/rule
@@ -456,7 +456,7 @@ neuralrt_benchmarks: benchmarks/CMakeFiles/neuralrt_benchmarks.dir/rule
 # codegen rule for target.
 benchmarks/CMakeFiles/neuralrt_benchmarks.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=40,41,42,43 "Finished codegen for target neuralrt_benchmarks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=43,44,45,46,47 "Finished codegen for target neuralrt_benchmarks"
 .PHONY : benchmarks/CMakeFiles/neuralrt_benchmarks.dir/codegen
 
 # clean rule for target.

@@ -1,4 +1,6 @@
 #include "neuralrt/core/tensor.h"
+
+#include <algorithm>
 #include <random>
 #include <stdexcept>
 
@@ -29,11 +31,12 @@ size_t flatten_index(const Shape& shape, std::initializer_list<size_t> indices) 
 }
 }  // namespace
 
-float& Tensor::at(std::initializer_list<size_t> indices) { return (*data_)[flatten_index(shape_, indices)]; }
-float Tensor::at(std::initializer_list<size_t> indices) const { return (*data_)[flatten_index(shape_, indices)]; }
-float* Tensor::data() noexcept { return data_->data(); }
-const float* Tensor::data() const noexcept { return data_->data(); }
-size_t Tensor::size() const noexcept { return data_->size(); }
+float& Tensor::at(std::initializer_list<size_t> indices) { return data()[flatten_index(shape_, indices)]; }
+float Tensor::at(std::initializer_list<size_t> indices) const { return data()[flatten_index(shape_, indices)]; }
+
+float* Tensor::data() noexcept { return view_ptr_ != nullptr ? view_ptr_ : data_->data(); }
+const float* Tensor::data() const noexcept { return view_ptr_ != nullptr ? view_ptr_ : data_->data(); }
+size_t Tensor::size() const noexcept { return shape_.num_elements(); }
 const Shape& Tensor::shape() const noexcept { return shape_; }
 
 Tensor Tensor::reshape(Shape new_shape) const {
@@ -43,10 +46,11 @@ Tensor Tensor::reshape(Shape new_shape) const {
     Tensor result;
     result.shape_ = std::move(new_shape);
     result.data_ = data_;
+    result.view_ptr_ = view_ptr_;
     return result;
 }
 
-Tensor Tensor::clone() const { return Tensor(shape_, std::vector<float>(*data_)); }
+Tensor Tensor::clone() const { return Tensor(shape_, std::vector<float>(data(), data() + size())); }
 Tensor Tensor::zeros(Shape shape) { return Tensor(std::move(shape)); }
 
 Tensor Tensor::random(Shape shape, float low, float high) {
@@ -55,6 +59,19 @@ Tensor Tensor::random(Shape shape, float low, float high) {
     std::uniform_real_distribution<float> dist(low, high);
     for (auto& v : buf) v = dist(gen);
     return Tensor(std::move(shape), std::move(buf));
+}
+
+Tensor Tensor::view(Shape shape, float* external_data) {
+    Tensor t;
+    t.shape_ = std::move(shape);
+    t.data_ = nullptr;
+    t.view_ptr_ = external_data;
+    return t;
+}
+
+void Tensor::copy_from(const Tensor& other) {
+    if (other.shape() != shape_) throw std::invalid_argument("Tensor::copy_from: shape mismatch");
+    std::copy(other.data(), other.data() + other.size(), data());
 }
 
 }  // namespace neuralrt

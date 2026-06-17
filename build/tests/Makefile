@@ -233,6 +233,30 @@ test_gemm.cpp.s:
 	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/test_gemm.cpp.s
 .PHONY : test_gemm.cpp.s
 
+test_graph.o: test_graph.cpp.o
+.PHONY : test_graph.o
+
+# target to build an object file
+test_graph.cpp.o:
+	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o
+.PHONY : test_graph.cpp.o
+
+test_graph.i: test_graph.cpp.i
+.PHONY : test_graph.i
+
+# target to preprocess a source file
+test_graph.cpp.i:
+	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.i
+.PHONY : test_graph.cpp.i
+
+test_graph.s: test_graph.cpp.s
+.PHONY : test_graph.s
+
+# target to generate assembly for a file
+test_graph.cpp.s:
+	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/neuralrt_tests.dir/build.make tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.s
+.PHONY : test_graph.cpp.s
+
 test_linear.o: test_linear.cpp.o
 .PHONY : test_linear.o
 
@@ -349,6 +373,9 @@ help:
 	@echo "... test_gemm.o"
 	@echo "... test_gemm.i"
 	@echo "... test_gemm.s"
+	@echo "... test_graph.o"
+	@echo "... test_graph.i"
+	@echo "... test_graph.s"
 	@echo "... test_linear.o"
 	@echo "... test_linear.i"
 	@echo "... test_linear.s"

@@ -156,10 +156,52 @@ CMakeFiles/neuralrt.dir/src/model/sequential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuralrt.dir/src/model/sequential.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nihar/NeuralRT/src/model/sequential.cpp -o CMakeFiles/neuralrt.dir/src/model/sequential.cpp.s
 
+CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o: CMakeFiles/neuralrt.dir/flags.make
+CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o: /home/nihar/NeuralRT/src/graph/graph.cpp
+CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o: CMakeFiles/neuralrt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o -MF CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o.d -o CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o -c /home/nihar/NeuralRT/src/graph/graph.cpp
+
+CMakeFiles/neuralrt.dir/src/graph/graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuralrt.dir/src/graph/graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nihar/NeuralRT/src/graph/graph.cpp > CMakeFiles/neuralrt.dir/src/graph/graph.cpp.i
+
+CMakeFiles/neuralrt.dir/src/graph/graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuralrt.dir/src/graph/graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nihar/NeuralRT/src/graph/graph.cpp -o CMakeFiles/neuralrt.dir/src/graph/graph.cpp.s
+
+CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o: CMakeFiles/neuralrt.dir/flags.make
+CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o: /home/nihar/NeuralRT/src/graph/planner.cpp
+CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o: CMakeFiles/neuralrt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o -MF CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o.d -o CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o -c /home/nihar/NeuralRT/src/graph/planner.cpp
+
+CMakeFiles/neuralrt.dir/src/graph/planner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuralrt.dir/src/graph/planner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nihar/NeuralRT/src/graph/planner.cpp > CMakeFiles/neuralrt.dir/src/graph/planner.cpp.i
+
+CMakeFiles/neuralrt.dir/src/graph/planner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuralrt.dir/src/graph/planner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nihar/NeuralRT/src/graph/planner.cpp -o CMakeFiles/neuralrt.dir/src/graph/planner.cpp.s
+
+CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o: CMakeFiles/neuralrt.dir/flags.make
+CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o: /home/nihar/NeuralRT/src/graph/executor.cpp
+CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o: CMakeFiles/neuralrt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o -MF CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o.d -o CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o -c /home/nihar/NeuralRT/src/graph/executor.cpp
+
+CMakeFiles/neuralrt.dir/src/graph/executor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuralrt.dir/src/graph/executor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nihar/NeuralRT/src/graph/executor.cpp > CMakeFiles/neuralrt.dir/src/graph/executor.cpp.i
+
+CMakeFiles/neuralrt.dir/src/graph/executor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuralrt.dir/src/graph/executor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nihar/NeuralRT/src/graph/executor.cpp -o CMakeFiles/neuralrt.dir/src/graph/executor.cpp.s
+
 CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o: CMakeFiles/neuralrt.dir/flags.make
 CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o: /home/nihar/NeuralRT/src/ops/gemm_avx2.cpp
 CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o: CMakeFiles/neuralrt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o -MF CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o.d -o CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o -c /home/nihar/NeuralRT/src/ops/gemm_avx2.cpp
 
 CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.i: cmake_force
@@ -173,7 +215,7 @@ CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.s: cmake_force
 CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o: CMakeFiles/neuralrt.dir/flags.make
 CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o: /home/nihar/NeuralRT/src/ops/activation_avx2.cpp
 CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o: CMakeFiles/neuralrt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o -MF CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o.d -o CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o -c /home/nihar/NeuralRT/src/ops/activation_avx2.cpp
 
 CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.i: cmake_force
@@ -192,6 +234,9 @@ neuralrt_OBJECTS = \
 "CMakeFiles/neuralrt.dir/src/ops/linear.cpp.o" \
 "CMakeFiles/neuralrt.dir/src/ops/activation.cpp.o" \
 "CMakeFiles/neuralrt.dir/src/model/sequential.cpp.o" \
+"CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o" \
+"CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o" \
+"CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o" \
 "CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o" \
 "CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o"
 
@@ -204,11 +249,14 @@ libneuralrt.a: CMakeFiles/neuralrt.dir/src/ops/gemm.cpp.o
 libneuralrt.a: CMakeFiles/neuralrt.dir/src/ops/linear.cpp.o
 libneuralrt.a: CMakeFiles/neuralrt.dir/src/ops/activation.cpp.o
 libneuralrt.a: CMakeFiles/neuralrt.dir/src/model/sequential.cpp.o
+libneuralrt.a: CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o
+libneuralrt.a: CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o
+libneuralrt.a: CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o
 libneuralrt.a: CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o
 libneuralrt.a: CMakeFiles/neuralrt.dir/src/ops/activation_avx2.cpp.o
 libneuralrt.a: CMakeFiles/neuralrt.dir/build.make
 libneuralrt.a: CMakeFiles/neuralrt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libneuralrt.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libneuralrt.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/neuralrt.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/neuralrt.dir/link.txt --verbose=$(VERBOSE)
 

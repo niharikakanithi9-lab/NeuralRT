@@ -10,6 +10,7 @@ add_executable(neuralrt_tests
     test_activation.cpp
     test_sequential.cpp
     test_simd_correctness.cpp
+    test_graph.cpp
 )
 
 target_link_libraries(neuralrt_tests PRIVATE neuralrt GTest::gtest_main)

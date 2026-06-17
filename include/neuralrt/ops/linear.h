@@ -7,7 +7,13 @@ class Linear {
 public:
     Linear(size_t in_features, size_t out_features);
     Linear(Tensor weight, Tensor bias);
+
     Tensor forward(const Tensor& input) const;
+
+    // Zero-allocation variant: writes into caller-provided output buffer
+    // (must already be shaped [batch, out_features]).
+    void forward_into(const Tensor& input, Tensor& output) const;
+
     const Tensor& weight() const noexcept;
     const Tensor& bias() const noexcept;
 

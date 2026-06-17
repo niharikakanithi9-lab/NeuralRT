@@ -336,6 +336,78 @@ src/core/tensor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/core/tensor.cpp.s
 .PHONY : src/core/tensor.cpp.s
 
+src/graph/executor.o: src/graph/executor.cpp.o
+.PHONY : src/graph/executor.o
+
+# target to build an object file
+src/graph/executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o
+.PHONY : src/graph/executor.cpp.o
+
+src/graph/executor.i: src/graph/executor.cpp.i
+.PHONY : src/graph/executor.i
+
+# target to preprocess a source file
+src/graph/executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/executor.cpp.i
+.PHONY : src/graph/executor.cpp.i
+
+src/graph/executor.s: src/graph/executor.cpp.s
+.PHONY : src/graph/executor.s
+
+# target to generate assembly for a file
+src/graph/executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/executor.cpp.s
+.PHONY : src/graph/executor.cpp.s
+
+src/graph/graph.o: src/graph/graph.cpp.o
+.PHONY : src/graph/graph.o
+
+# target to build an object file
+src/graph/graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o
+.PHONY : src/graph/graph.cpp.o
+
+src/graph/graph.i: src/graph/graph.cpp.i
+.PHONY : src/graph/graph.i
+
+# target to preprocess a source file
+src/graph/graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/graph.cpp.i
+.PHONY : src/graph/graph.cpp.i
+
+src/graph/graph.s: src/graph/graph.cpp.s
+.PHONY : src/graph/graph.s
+
+# target to generate assembly for a file
+src/graph/graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/graph.cpp.s
+.PHONY : src/graph/graph.cpp.s
+
+src/graph/planner.o: src/graph/planner.cpp.o
+.PHONY : src/graph/planner.o
+
+# target to build an object file
+src/graph/planner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o
+.PHONY : src/graph/planner.cpp.o
+
+src/graph/planner.i: src/graph/planner.cpp.i
+.PHONY : src/graph/planner.i
+
+# target to preprocess a source file
+src/graph/planner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/planner.cpp.i
+.PHONY : src/graph/planner.cpp.i
+
+src/graph/planner.s: src/graph/planner.cpp.s
+.PHONY : src/graph/planner.s
+
+# target to generate assembly for a file
+src/graph/planner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/neuralrt.dir/build.make CMakeFiles/neuralrt.dir/src/graph/planner.cpp.s
+.PHONY : src/graph/planner.cpp.s
+
 src/model/sequential.o: src/model/sequential.cpp.o
 .PHONY : src/model/sequential.o
 
@@ -508,6 +580,15 @@ help:
 	@echo "... src/core/tensor.o"
 	@echo "... src/core/tensor.i"
 	@echo "... src/core/tensor.s"
+	@echo "... src/graph/executor.o"
+	@echo "... src/graph/executor.i"
+	@echo "... src/graph/executor.s"
+	@echo "... src/graph/graph.o"
+	@echo "... src/graph/graph.i"
+	@echo "... src/graph/graph.s"
+	@echo "... src/graph/planner.o"
+	@echo "... src/graph/planner.i"
+	@echo "... src/graph/planner.s"
 	@echo "... src/model/sequential.o"
 	@echo "... src/model/sequential.i"
 	@echo "... src/model/sequential.s"

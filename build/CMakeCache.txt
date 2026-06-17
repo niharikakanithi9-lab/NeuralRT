@@ -394,7 +394,7 @@ NEURALRT_BUILD_BENCHMARKS:BOOL=ON
 //Build unit tests
 NEURALRT_BUILD_TESTS:BOOL=ON
 
-//Enable AVX2 SIMD codepaths
+//Enable AVX2 SIMD codepaths (defines __AVX2__)
 NEURALRT_ENABLE_AVX2:BOOL=ON
 
 //Value Computed by CMake

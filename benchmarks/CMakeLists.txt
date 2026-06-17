@@ -9,6 +9,7 @@ add_executable(neuralrt_benchmarks
     bench_gemm.cpp
     bench_sequential.cpp
     bench_activation.cpp
+    bench_executor.cpp
 )
 target_link_libraries(neuralrt_benchmarks PRIVATE neuralrt benchmark::benchmark)
 target_include_directories(neuralrt_benchmarks PRIVATE ${CMAKE_SOURCE_DIR}/include)

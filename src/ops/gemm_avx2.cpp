@@ -51,17 +51,42 @@ Tensor matmul_avx2(const Tensor& a, const Tensor& b) {
                     const float* a_row = a_ptr + i * K;
                     float* c_row = c_ptr + i * N;
                     size_t j = n0;
-                    for (; j + 8 <= n_end; j += 8) {
-                        accumulate_strip(a_row, b_ptr, c_row + j, N, k0, k_end, j);
-                    }
-                    for (; j < n_end; ++j) {
-                        accumulate_scalar_tail(a_row, b_ptr, c_ptr + i * N, N, k0, k_end, j);
-                    }
+                    for (; j + 8 <= n_end; j += 8) accumulate_strip(a_row, b_ptr, c_row + j, N, k0, k_end, j);
+                    for (; j < n_end; ++j) accumulate_scalar_tail(a_row, b_ptr, c_ptr + i * N, N, k0, k_end, j);
                 }
             }
         }
     }
     return c;
+}
+
+void matmul_avx2_into(const Tensor& a, const Tensor& b, Tensor& out) {
+    detail::validate_matmul_shapes(a, b);
+    const size_t M = a.shape().dim(0);
+    const size_t K = a.shape().dim(1);
+    const size_t N = b.shape().dim(1);
+
+    const float* a_ptr = a.data();
+    const float* b_ptr = b.data();
+    float* c_ptr = out.data();
+    std::fill(c_ptr, c_ptr + M * N, 0.0f);
+
+    for (size_t i0 = 0; i0 < M; i0 += kBlockM) {
+        const size_t i_end = std::min(i0 + kBlockM, M);
+        for (size_t n0 = 0; n0 < N; n0 += kBlockN) {
+            const size_t n_end = std::min(n0 + kBlockN, N);
+            for (size_t k0 = 0; k0 < K; k0 += kBlockK) {
+                const size_t k_end = std::min(k0 + kBlockK, K);
+                for (size_t i = i0; i < i_end; ++i) {
+                    const float* a_row = a_ptr + i * K;
+                    float* c_row = c_ptr + i * N;
+                    size_t j = n0;
+                    for (; j + 8 <= n_end; j += 8) accumulate_strip(a_row, b_ptr, c_row + j, N, k0, k_end, j);
+                    for (; j < n_end; ++j) accumulate_scalar_tail(a_row, b_ptr, c_ptr + i * N, N, k0, k_end, j);
+                }
+            }
+        }
+    }
 }
 
 }  // namespace neuralrt::ops

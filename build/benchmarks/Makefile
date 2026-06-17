@@ -209,6 +209,30 @@ bench_activation.cpp.s:
 	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.s
 .PHONY : bench_activation.cpp.s
 
+bench_executor.o: bench_executor.cpp.o
+.PHONY : bench_executor.o
+
+# target to build an object file
+bench_executor.cpp.o:
+	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o
+.PHONY : bench_executor.cpp.o
+
+bench_executor.i: bench_executor.cpp.i
+.PHONY : bench_executor.i
+
+# target to preprocess a source file
+bench_executor.cpp.i:
+	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.i
+.PHONY : bench_executor.cpp.i
+
+bench_executor.s: bench_executor.cpp.s
+.PHONY : bench_executor.s
+
+# target to generate assembly for a file
+bench_executor.cpp.s:
+	cd /home/nihar/NeuralRT/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/neuralrt_benchmarks.dir/build.make benchmarks/CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.s
+.PHONY : bench_executor.cpp.s
+
 bench_gemm.o: bench_gemm.cpp.o
 .PHONY : bench_gemm.o
 
@@ -274,6 +298,9 @@ help:
 	@echo "... bench_activation.o"
 	@echo "... bench_activation.i"
 	@echo "... bench_activation.s"
+	@echo "... bench_executor.o"
+	@echo "... bench_executor.i"
+	@echo "... bench_executor.s"
 	@echo "... bench_gemm.o"
 	@echo "... bench_gemm.i"
 	@echo "... bench_gemm.s"

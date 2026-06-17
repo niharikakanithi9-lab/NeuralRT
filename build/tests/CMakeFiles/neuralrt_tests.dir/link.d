@@ -8,6 +8,7 @@ neuralrt_tests: \
   CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o \
   CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o \
   CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o \
+  CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o \
   ../libneuralrt.a \
   ../lib/libgtest_main.a \
   ../lib/libgtest.a \
@@ -56,6 +57,8 @@ CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o:
 CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o:
 
 CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o:
+
+CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o:
 
 ../libneuralrt.a:
 

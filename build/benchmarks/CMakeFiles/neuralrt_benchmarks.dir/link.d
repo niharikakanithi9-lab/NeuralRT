@@ -5,6 +5,7 @@ neuralrt_benchmarks: \
   CMakeFiles/neuralrt_benchmarks.dir/bench_gemm.cpp.o \
   CMakeFiles/neuralrt_benchmarks.dir/bench_sequential.cpp.o \
   CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.o \
+  CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o \
   ../libneuralrt.a \
   ../_deps/googlebenchmark-build/src/libbenchmark.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/librt.a \
@@ -47,6 +48,8 @@ CMakeFiles/neuralrt_benchmarks.dir/bench_gemm.cpp.o:
 CMakeFiles/neuralrt_benchmarks.dir/bench_sequential.cpp.o:
 
 CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.o:
+
+CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o:
 
 ../libneuralrt.a:
 

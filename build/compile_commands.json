@@ -37,6 +37,24 @@
 },
 {
   "directory": "/home/nihar/NeuralRT/build",
+  "command": "/usr/bin/c++  -I/home/nihar/NeuralRT/include -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -mavx2 -mfma -o CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o -c /home/nihar/NeuralRT/src/graph/graph.cpp",
+  "file": "/home/nihar/NeuralRT/src/graph/graph.cpp",
+  "output": "CMakeFiles/neuralrt.dir/src/graph/graph.cpp.o"
+},
+{
+  "directory": "/home/nihar/NeuralRT/build",
+  "command": "/usr/bin/c++  -I/home/nihar/NeuralRT/include -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -mavx2 -mfma -o CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o -c /home/nihar/NeuralRT/src/graph/planner.cpp",
+  "file": "/home/nihar/NeuralRT/src/graph/planner.cpp",
+  "output": "CMakeFiles/neuralrt.dir/src/graph/planner.cpp.o"
+},
+{
+  "directory": "/home/nihar/NeuralRT/build",
+  "command": "/usr/bin/c++  -I/home/nihar/NeuralRT/include -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -mavx2 -mfma -o CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o -c /home/nihar/NeuralRT/src/graph/executor.cpp",
+  "file": "/home/nihar/NeuralRT/src/graph/executor.cpp",
+  "output": "CMakeFiles/neuralrt.dir/src/graph/executor.cpp.o"
+},
+{
+  "directory": "/home/nihar/NeuralRT/build",
   "command": "/usr/bin/c++  -I/home/nihar/NeuralRT/include -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -mavx2 -mfma -o CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o -c /home/nihar/NeuralRT/src/ops/gemm_avx2.cpp",
   "file": "/home/nihar/NeuralRT/src/ops/gemm_avx2.cpp",
   "output": "CMakeFiles/neuralrt.dir/src/ops/gemm_avx2.cpp.o"
@@ -84,6 +102,12 @@
   "output": "tests/CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o"
 },
 {
+  "directory": "/home/nihar/NeuralRT/build/tests",
+  "command": "/usr/bin/c++  -I/home/nihar/NeuralRT/include -isystem /home/nihar/NeuralRT/build/_deps/googletest-src/googletest/include -isystem /home/nihar/NeuralRT/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=gnu++17 -mavx2 -mfma -o CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o -c /home/nihar/NeuralRT/tests/test_graph.cpp",
+  "file": "/home/nihar/NeuralRT/tests/test_graph.cpp",
+  "output": "tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o"
+},
+{
   "directory": "/home/nihar/NeuralRT/build/_deps/googletest-build/googlemock",
   "command": "/usr/bin/c++  -I/home/nihar/NeuralRT/build/_deps/googletest-src/googlemock/include -I/home/nihar/NeuralRT/build/_deps/googletest-src/googlemock -isystem /home/nihar/NeuralRT/build/_deps/googletest-src/googletest/include -isystem /home/nihar/NeuralRT/build/_deps/googletest-src/googletest -O3 -DNDEBUG -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/nihar/NeuralRT/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "file": "/home/nihar/NeuralRT/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
@@ -124,6 +148,12 @@
   "command": "/usr/bin/c++ -DBENCHMARK_STATIC_DEFINE -I/home/nihar/NeuralRT/include -I/home/nihar/NeuralRT/build/_deps/googlebenchmark-src/include -O3 -DNDEBUG -std=gnu++17 -mavx2 -mfma -o CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.o -c /home/nihar/NeuralRT/benchmarks/bench_activation.cpp",
   "file": "/home/nihar/NeuralRT/benchmarks/bench_activation.cpp",
   "output": "benchmarks/CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.o"
+},
+{
+  "directory": "/home/nihar/NeuralRT/build/benchmarks",
+  "command": "/usr/bin/c++ -DBENCHMARK_STATIC_DEFINE -I/home/nihar/NeuralRT/include -I/home/nihar/NeuralRT/build/_deps/googlebenchmark-src/include -O3 -DNDEBUG -std=gnu++17 -mavx2 -mfma -o CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o -c /home/nihar/NeuralRT/benchmarks/bench_executor.cpp",
+  "file": "/home/nihar/NeuralRT/benchmarks/bench_executor.cpp",
+  "output": "benchmarks/CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o"
 },
 {
   "directory": "/home/nihar/NeuralRT/build/_deps/googlebenchmark-build/src",

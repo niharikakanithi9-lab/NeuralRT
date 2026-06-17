@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/neuralrt_benchmarks.dir/link.d"
   "CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.o"
   "CMakeFiles/neuralrt_benchmarks.dir/bench_activation.cpp.o.d"
+  "CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o"
+  "CMakeFiles/neuralrt_benchmarks.dir/bench_executor.cpp.o.d"
   "CMakeFiles/neuralrt_benchmarks.dir/bench_gemm.cpp.o"
   "CMakeFiles/neuralrt_benchmarks.dir/bench_gemm.cpp.o.d"
   "CMakeFiles/neuralrt_benchmarks.dir/bench_sequential.cpp.o"

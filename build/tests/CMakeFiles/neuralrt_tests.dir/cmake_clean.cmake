@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o.d"
   "CMakeFiles/neuralrt_tests.dir/test_gemm.cpp.o"
   "CMakeFiles/neuralrt_tests.dir/test_gemm.cpp.o.d"
+  "CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o"
+  "CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o.d"
   "CMakeFiles/neuralrt_tests.dir/test_linear.cpp.o"
   "CMakeFiles/neuralrt_tests.dir/test_linear.cpp.o.d"
   "CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o"

@@ -11,7 +11,7 @@ endif()
 
 option(NEURALRT_BUILD_TESTS "Build unit tests" ON)
 option(NEURALRT_BUILD_BENCHMARKS "Build benchmarks" ON)
-option(NEURALRT_ENABLE_AVX2 "Enable AVX2 SIMD codepaths" ON)
+option(NEURALRT_ENABLE_AVX2 "Enable AVX2 SIMD codepaths (defines __AVX2__)" ON)
 
 include(cmake/CompilerWarnings.cmake)
 
@@ -22,9 +22,15 @@ add_library(neuralrt
     src/ops/linear.cpp
     src/ops/activation.cpp
     src/model/sequential.cpp
+    src/graph/graph.cpp
+    src/graph/planner.cpp
+    src/graph/executor.cpp
 )
 
-target_include_directories(neuralrt PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(neuralrt PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
 target_compile_features(neuralrt PUBLIC cxx_std_17)
 neuralrt_set_warnings(neuralrt)
 

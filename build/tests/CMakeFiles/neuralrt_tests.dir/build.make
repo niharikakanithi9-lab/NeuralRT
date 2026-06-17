@@ -156,6 +156,20 @@ tests/CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.s"
 	cd /home/nihar/NeuralRT/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nihar/NeuralRT/tests/test_simd_correctness.cpp -o CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.s
 
+tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o: tests/CMakeFiles/neuralrt_tests.dir/flags.make
+tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o: /home/nihar/NeuralRT/tests/test_graph.cpp
+tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o: tests/CMakeFiles/neuralrt_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o"
+	cd /home/nihar/NeuralRT/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o -MF CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o.d -o CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o -c /home/nihar/NeuralRT/tests/test_graph.cpp
+
+tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/neuralrt_tests.dir/test_graph.cpp.i"
+	cd /home/nihar/NeuralRT/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nihar/NeuralRT/tests/test_graph.cpp > CMakeFiles/neuralrt_tests.dir/test_graph.cpp.i
+
+tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/neuralrt_tests.dir/test_graph.cpp.s"
+	cd /home/nihar/NeuralRT/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nihar/NeuralRT/tests/test_graph.cpp -o CMakeFiles/neuralrt_tests.dir/test_graph.cpp.s
+
 # Object files for target neuralrt_tests
 neuralrt_tests_OBJECTS = \
 "CMakeFiles/neuralrt_tests.dir/test_tensor.cpp.o" \
@@ -163,7 +177,8 @@ neuralrt_tests_OBJECTS = \
 "CMakeFiles/neuralrt_tests.dir/test_linear.cpp.o" \
 "CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o" \
 "CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o" \
-"CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o"
+"CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o" \
+"CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o"
 
 # External object files for target neuralrt_tests
 neuralrt_tests_EXTERNAL_OBJECTS =
@@ -174,13 +189,14 @@ tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/test_linear.cpp.o
 tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/test_activation.cpp.o
 tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/test_sequential.cpp.o
 tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/test_simd_correctness.cpp.o
+tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/test_graph.cpp.o
 tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/build.make
 tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/compiler_depend.ts
 tests/neuralrt_tests: libneuralrt.a
 tests/neuralrt_tests: lib/libgtest_main.a
 tests/neuralrt_tests: lib/libgtest.a
 tests/neuralrt_tests: tests/CMakeFiles/neuralrt_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable neuralrt_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nihar/NeuralRT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable neuralrt_tests"
 	cd /home/nihar/NeuralRT/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/neuralrt_tests.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/nihar/NeuralRT/build/tests && /usr/bin/cmake -D TEST_TARGET=neuralrt_tests -D TEST_EXECUTABLE=/home/nihar/NeuralRT/build/tests/neuralrt_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/nihar/NeuralRT/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=neuralrt_tests_TESTS -D CTEST_FILE=/home/nihar/NeuralRT/build/tests/neuralrt_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-4.2/Modules/GoogleTestAddTests.cmake
 
