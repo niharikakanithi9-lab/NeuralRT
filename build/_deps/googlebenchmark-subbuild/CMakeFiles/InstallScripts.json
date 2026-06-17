@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nihar/NeuralRT/build/_deps/googlebenchmark-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

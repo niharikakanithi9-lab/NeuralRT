@@ -1,0 +1,266 @@
+{
+  "tests": 40,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TensorTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "ConstructsWithZeros",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 8
+        },
+        {
+          "name": "ConstructsFromData",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 14
+        },
+        {
+          "name": "ConstructorThrowsOnSizeMismatch",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 22
+        },
+        {
+          "name": "AtThrowsOnOutOfBounds",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 26
+        },
+        {
+          "name": "MutationThroughAt",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 31
+        },
+        {
+          "name": "ReshapeIsZeroCopy",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 37
+        },
+        {
+          "name": "ReshapeThrowsOnElementCountMismatch",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 46
+        },
+        {
+          "name": "CloneIsDeepCopy",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 51
+        },
+        {
+          "name": "ZerosFactory",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 58
+        },
+        {
+          "name": "RandomFactoryRespectsBounds",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "name": "ShapeTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "NumElementsComputesProduct",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 71
+        },
+        {
+          "name": "StridesAreRowMajor",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 76
+        },
+        {
+          "name": "EqualityOperator",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_tensor.cpp",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "name": "GemmTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "IdentityMultiplication",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_gemm.cpp",
+          "line": 9
+        },
+        {
+          "name": "KnownResultRectangular",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_gemm.cpp",
+          "line": 19
+        },
+        {
+          "name": "ThrowsOnDimensionMismatch",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_gemm.cpp",
+          "line": 29
+        },
+        {
+          "name": "ThrowsOnNonRank2Input",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_gemm.cpp",
+          "line": 34
+        },
+        {
+          "name": "ResultShapeIsCorrect",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_gemm.cpp",
+          "line": 39
+        },
+        {
+          "name": "ZeroMatrixProducesZero",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_gemm.cpp",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "name": "LinearTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "ForwardWithKnownWeightsAndBias",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_linear.cpp",
+          "line": 9
+        },
+        {
+          "name": "BatchedForward",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_linear.cpp",
+          "line": 19
+        },
+        {
+          "name": "ThrowsOnBiasShapeMismatch",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_linear.cpp",
+          "line": 31
+        },
+        {
+          "name": "ThrowsOnIncompatibleInput",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_linear.cpp",
+          "line": 36
+        },
+        {
+          "name": "RandomInitProducesCorrectShapes",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_linear.cpp",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "name": "ActivationTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "InPlaceZerosNegatives",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_activation.cpp",
+          "line": 9
+        },
+        {
+          "name": "OutOfPlaceDoesNotMutateInput",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_activation.cpp",
+          "line": 18
+        },
+        {
+          "name": "AllPositiveUnchanged",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_activation.cpp",
+          "line": 27
+        },
+        {
+          "name": "ZeroStaysZero",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_activation.cpp",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "name": "SequentialTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "EmptyModelReturnsInputUnchanged",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_sequential.cpp",
+          "line": 11
+        },
+        {
+          "name": "NumLayersTracksAdditions",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_sequential.cpp",
+          "line": 19
+        },
+        {
+          "name": "ForwardProducesCorrectOutputShape",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_sequential.cpp",
+          "line": 27
+        },
+        {
+          "name": "ReLUClipsNegativesBetweenLayers",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_sequential.cpp",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "name": "GemmAvx2Test",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "MatchesScalarOnSquareMatrix",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 25
+        },
+        {
+          "name": "MatchesScalarOnNonMultipleOf8Dims",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 31
+        },
+        {
+          "name": "MatchesScalarAcrossBlockBoundaries",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 37
+        },
+        {
+          "name": "MatchesScalarOnNonSquareTallSkinny",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "name": "ReluAvx2Test",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "MatchesScalarExactly",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 49
+        },
+        {
+          "name": "MatchesScalarOnExactMultipleOf8",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "name": "GemmDispatchTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "MatmulMatchesScalarRegardlessOfBackend",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "name": "ReluDispatchTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "ReluMatchesScalarRegardlessOfBackend",
+          "file": "\/home\/nihar\/NeuralRT\/tests\/test_simd_correctness.cpp",
+          "line": 72
+        }
+      ]
+    }
+  ]
+}

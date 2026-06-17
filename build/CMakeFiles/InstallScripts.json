@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/nihar/NeuralRT/build/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/tests/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/_deps/googletest-build/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/_deps/googletest-build/googletest/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/benchmarks/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/_deps/googlebenchmark-build/cmake_install.cmake",
+		"/home/nihar/NeuralRT/build/_deps/googlebenchmark-build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
