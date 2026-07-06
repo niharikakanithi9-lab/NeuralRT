@@ -1,5 +1,7 @@
 # NeuralRT
 
+🚀 Release Note: This project was developed entirely within a localized VS Code workspace. It is published here as a consolidated, stable V1.0 baseline. Future feature branches, optimizations, and active staging will be tracked directly through this repository's commit history.
+
 A CPU-only neural network inference runtime built from scratch in modern C++17 featuring custom tensor abstractions, dense linear algebra kernels, AVX2 SIMD acceleration, and a static graph executor with deterministic memory behavior.
 
 Unlike educational "ML from scratch" projects that focus purely on correctness, NeuralRT was built as a systems engineering project focused on runtime performance, memory management, cache efficiency, and inference execution.
